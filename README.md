@@ -1,2 +1,3 @@
 # playground
-This is my playground
+This is my playground for drinks.
+Enjoy!
