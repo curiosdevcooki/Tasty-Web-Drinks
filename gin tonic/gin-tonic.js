@@ -12,7 +12,7 @@ class GinTonic extends HTMLElement {
           list-style: none;
           padding: 0;
           margin: 0;
-        }s
+        }
       </style>
       <article>
         <h1>Gin Tonic</h1>
@@ -31,3 +31,23 @@ class GinTonic extends HTMLElement {
 }
 
 customElements.define('gin-tonic', GinTonic);
+
+const el = document.createElement('gin-tonic');
+document.body.appendChild(el);
+
+const NewDrink = new GinTonic();
+document.body.appendChild(NewDrink);
+
+const ginTonic = () => {
+  return (
+    <div>
+      <h1>Gin Tonic</h1>
+      <ul>
+        <li>Cubes of ice: 3</li>
+        <li>Lime sclices: 3</li>
+        <li>Gin: 2 parts</li>
+        <li>Tonic: 5 parts</li>
+      </ul>
+    </div>
+  );
+};
