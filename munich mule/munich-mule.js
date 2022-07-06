@@ -37,4 +37,19 @@ customElements.define('gin-tonic', GinTonic);
 const NewDrink = new GinTonic();
 document.body.appendChild(NewDrink);
 
+// const ginTonic = () => {
+//   return (
+//     <div>
+//       <h1>Gin Tonic</h1>
+//       <ul>
+//         <li>Cubes of ice: 3</li>
+//         <li>Lime sclices: 3</li>
+//         <li>Gin: 2 parts</li>
+//         <li>Tonic: 5 parts</li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+
 const sheet = new CSSStyleSheet();
