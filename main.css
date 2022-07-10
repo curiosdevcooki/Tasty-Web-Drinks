@@ -4,15 +4,21 @@
   margin: 0;
   font-size: 62.5%;
 
-  --color-primary: #00bcd4;
-  --color-secondary: #fafafa;
-  --color-tertiary: #fafafa;
-  --color-quaternary: #fafafa;
-  --color-quinary: #fafafa;
+
+  --color-blue: #00bcd4;
+  --color-green: #147a44;
+  --color-white: #fafafa;
+  --color-orange: #f49b75;
+  --color-black: #fafafa;
 
 }
-
+body {
+  background-color: var(--color-orange);
+}
 main{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 1em 2em; 
+  
 }
