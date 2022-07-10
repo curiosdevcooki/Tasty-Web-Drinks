@@ -7,17 +7,11 @@ class GinTonic extends HTMLElement {
     });
     this.shadowRoot.innerHTML = `
       <style>
-        #topping {
-          display: flex;
-          flex-direction: row;
-        }
-
-        #fluids {
-          display: grid;
-          grid-template-rows: 2fr 5fr;
-          border-radius: 5px;
-          padding: 10px;
-        }
+        
+        
+        
+        
+        
         
         article {
           padding: 1rem;
@@ -25,6 +19,13 @@ class GinTonic extends HTMLElement {
           background-color: var(--color-white);
           box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
         }
+
+        main {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 2fr 5fr;
+}
+        
 
         section {
           border: 0.5rem solid #f5f5f5;
@@ -35,7 +36,7 @@ class GinTonic extends HTMLElement {
           width: 100%;
           aspect-ratio: 1;
         } 
-
+        
       </style>
 
   
@@ -44,15 +45,17 @@ class GinTonic extends HTMLElement {
         <h1>Gin Tonic</h1>
 
         <main>
-          <section id="topping">
+          <section id="ice">
             <img src="https://static.vecteezy.com/system/resources/previews/000/553/442/original/vector-frozen-ice-cubes-for-drinks.jpg" alt="icecubes"/>
+          </section>
+          <section id="lime">
             <img src="https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s" alt="lime"/>
           </section>
-          <section id="Gin">
-            <h2 id="Gin">Gin</h2>
+          <section id="gin">
+            <h2>Gin</h2>
           </section>
-          <section id="Tonic">
-            <h2 id="tonic">Tonic</h2>  
+          <section id="tonic">
+            <h2>Tonic</h2>  
           </section>
         </main>
 
