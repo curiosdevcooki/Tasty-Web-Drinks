@@ -10,15 +10,38 @@
   --color-white: #fafafa;
   --color-orange: #f49b75;
   --color-black: #fafafa;
+  --color-grey: #ccc;
 
+  --font-regular: 'Source Sans Pro', sans-serif;
 }
+  
+@font-face {
+  font-family: var(--font-regular), sans-serif;
+  src: url("../fonts/source-sans-pro-v13-latin-regular.woff2") format("woff2");
+  font-style: normal;
+}
+
 body {
   background-color: var(--color-orange);
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/13/24/leaves-146984_960_720.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: var(--font-regular);
 }
+
 main{
-display: grid; 
+  display: grid; 
   grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 1em 2em; 
-  
+  grid-template-columns: repeat(auto-fill, minmax(0, 400px));
+  gap: 1em;
+  justify-content: center;
+}
+
+h1{
+  font-size: 10rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
