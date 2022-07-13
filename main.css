@@ -1,3 +1,4 @@
+
 :root{
   box-sizing: border-box;
   padding: 0;
@@ -12,14 +13,10 @@
   --color-black: #fafafa;
   --color-grey: #ccc;
 
-  --font-regular: 'Source Sans Pro', sans-serif;
+  --font-regular: 'Arima', cursive;
 }
-  
-@font-face {
-  font-family: var(--font-regular), sans-serif;
-  src: url("../fonts/source-sans-pro-v13-latin-regular.woff2") format("woff2");
-  font-style: normal;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
 
 body {
   background-color: var(--color-orange);
@@ -30,8 +27,8 @@ body {
 }
 
 main{
-  display: grid; 
-  grid-auto-columns: 1fr; 
+  display: grid;
+  grid-auto-columns: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(0, 400px));
   gap: 1em;
   justify-content: center;
