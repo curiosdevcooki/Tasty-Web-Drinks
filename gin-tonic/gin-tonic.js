@@ -29,7 +29,7 @@ export class GinTonic extends HTMLElement {
 
         @font-face {
           font-family: var(--font-regular);
-          src: url("../fonts/source-sans-pro-v13-latin-300.woff2") format("woff2");
+          src: url('../fonts/source-sans-pro-v13-latin-300.woff2') format('woff2');
           font-style: normal;
         }
 
@@ -38,9 +38,9 @@ export class GinTonic extends HTMLElement {
           grid-template-columns: 0.5fr 0.5fr;
           grid-template-rows: 10rem 10fr 50fr;
           grid-template-areas:
-            "ice lemon"
-            "tonic tonic"
-            "gin gin";
+            'ice lemon'
+            'tonic tonic'
+            'gin gin';
 
           background-color: var(--color-white);
           box-shadow: 2rem black;
@@ -109,6 +109,7 @@ export class GinTonic extends HTMLElement {
         img {
           width: 100%;
           aspect-ratio: 1/1;
+          // -webkit-box-reflect: below;
         }
 
         h1 {
@@ -126,20 +127,20 @@ export class GinTonic extends HTMLElement {
 
         <main>
 
-          <section id="ice">
-            <img src="https://static.vecteezy.com/system/resources/previews/000/553/442/original/vector-frozen-ice-cubes-for-drinks.jpg" alt="icecubes"/>
+          <section id='ice'>
+          <img src='../images/ice-cube.svg' alt='icecubes'/>
           </section>
 
-          <section id="lemon">
-            <img src="https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s" alt="lemon"/>
+          <section id='lemon'>
+            <img src='https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s' alt='lemon'/>
           </section>
 
-          <section id="gin">
-            <h2>Gin</h2>
+          <section id='gin'>
+            <h2> </h2>
           </section>
 
-          <section id="tonic">
-            <h2>Tonic</h2>
+          <section id='tonic'>
+            <h2> </h2>
           </section>
 
         </main>
@@ -168,6 +169,10 @@ document.body.appendChild(NewDrink);
 // // document.body.appendChild(NewDrink);
 
 
-// const sheet = new CSSStyleSheet();
+const tileStyleSheet = new CSSStyleSheet();
+tileStyleSheet.replaceSync(`#gin:hover {
+          background-color: yellow;
+          color: var(--color-blue);
+        }`);
 
-document.getElementsByTagName('gin-tonic-🫙')[0].style.backgroundColor = 'red';
+// document.getElementsByTagName('gin-tonic-🫙')[0].style.backgroundColor = 'red';
