@@ -3,11 +3,9 @@
 export class GinTonic extends HTMLElement {
   constructor() {
     super();
-    const template = document.getElementById('drink').content;
-    const shadowroot = this.attachShadow({ mode: 'open' });
-    shadowroot.appendChild(template.cloneNode(true));
+    const shadowRoot = this.attachShadow({ mode: 'open' });
 
-    this.innerHTML = `
+    shadowRoot.innerHTML = `
       <style>
         :host {
           box-sizing: border-box;
@@ -40,7 +38,7 @@ export class GinTonic extends HTMLElement {
           grid-template-columns: 0.5fr 0.5fr;
           grid-template-rows: 10rem 10fr 50fr;
           grid-template-areas:
-            "ice lime"
+            "ice lemon"
             "tonic tonic"
             "gin gin";
 
@@ -104,8 +102,8 @@ export class GinTonic extends HTMLElement {
           grid-area: ice;
         }
 
-        #lime {
-          grid-area: lime;
+        #lemon {
+          grid-area: lemon;
         }
 
         img {
@@ -132,8 +130,8 @@ export class GinTonic extends HTMLElement {
             <img src="https://static.vecteezy.com/system/resources/previews/000/553/442/original/vector-frozen-ice-cubes-for-drinks.jpg" alt="icecubes"/>
           </section>
 
-          <section id="lime">
-            <img src="https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s" alt="lime"/>
+          <section id="lemon">
+            <img src="https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s" alt="lemon"/>
           </section>
 
           <section id="gin">
@@ -148,7 +146,10 @@ export class GinTonic extends HTMLElement {
 
         <footer>
           <description>
-          Fill your container with ice-cubes, add 2 parts gin and 5 parts tonic. Top with lime and cucumber.
+          <ul>
+          <li>fill your container with ice-cubes</li>
+          <li> add gin and tonic </li>
+          <li> top with lemon and cucumber</li>
           </description>
          </footer>
 
@@ -162,8 +163,8 @@ customElements.define('gin-tonic-🫙', GinTonic);
 // const el = document.createElement('gin-tonic-🫙');
 // document.body.appendChild(el);
 
-// const NewDrink = new GinTonic();
-// document.body.appendChild(NewDrink);
+const NewDrink = new GinTonic();
+document.body.appendChild(NewDrink);
 // // document.body.appendChild(NewDrink);
 
 
