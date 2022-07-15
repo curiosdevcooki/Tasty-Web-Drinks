@@ -1,11 +1,11 @@
 
-
 //Create a tasty, stand-alone Web Component of your drink:
 export class GinTonic extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = `
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+
+    shadowRoot.innerHTML = `
       <style>
         :host {
           box-sizing: border-box;
@@ -13,7 +13,6 @@ export class GinTonic extends HTMLElement {
           margin: 0;
 
           font-size: 62.5%;
-        }
 
           --color-blue: #00bcd4;
           --color-green: #147a44;
@@ -39,9 +38,10 @@ export class GinTonic extends HTMLElement {
           grid-template-columns: 0.5fr 0.5fr;
           grid-template-rows: 10rem 10fr 50fr;
           grid-template-areas:
-            "ice lime"
+            "ice lemon"
             "tonic tonic"
             "gin gin";
+
           background-color: var(--color-white);
           box-shadow: 2rem black;
           border-radius: 1rem;
@@ -64,6 +64,12 @@ export class GinTonic extends HTMLElement {
 
           border-radius: 1rem 1rem 2rem 2rem;
           box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+        }
+
+        description {
+            font-size: 2rem;
+            font-weight: bold;
+            font-style: italic;
         }
 
         #gin {
@@ -94,12 +100,10 @@ export class GinTonic extends HTMLElement {
 
         #ice {
           grid-area: ice;
-          -webkit-box-reflect: below;
         }
 
-        #lime {
-          grid-area: lime;
-          -webkit-box-reflect: below;
+        #lemon {
+          grid-area: lemon;
         }
 
         img {
@@ -116,8 +120,7 @@ export class GinTonic extends HTMLElement {
         }
 
       </style>
-
-        <article>
+      </head> <article>
 
         <h1>Gin Tonic</h1>
 
@@ -127,8 +130,8 @@ export class GinTonic extends HTMLElement {
             <img src="https://static.vecteezy.com/system/resources/previews/000/553/442/original/vector-frozen-ice-cubes-for-drinks.jpg" alt="icecubes"/>
           </section>
 
-          <section id="lime">
-            <img src="https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s" alt="lime"/>
+          <section id="lemon">
+            <img src="https://media1.giphy.com/media/kiwuYsHJQqePQG3jJk/giphy.gif?cid=790b76119566f6760f7af6aec95858d12ac4942b072f61c6&rid=giphy.gif&ct=s" alt="lemon"/>
           </section>
 
           <section id="gin">
@@ -142,24 +145,29 @@ export class GinTonic extends HTMLElement {
         </main>
 
         <footer>
-        <description>
-        Fill your container with ice-cubes, add 2 parts gin and 5 parts tonic. Top with lime and cucumber.
-        </description>
-        </footer>
+          <description>
+          <ul>
+          <li>fill your container with ice-cubes</li>
+          <li> add gin and tonic </li>
+          <li> top with lemon and cucumber</li>
+          </description>
+         </footer>
 
         </article>
       `;
   }
 }
 
-customElements.define('gin-tonic', GinTonic);
+customElements.define('gin-tonic-🫙', GinTonic);
 
 // const el = document.createElement('gin-tonic-🫙');
 // document.body.appendChild(el);
 
-// const NewDrink = new GinTonic();
-// document.body.appendChild(NewDrink);
+const NewDrink = new GinTonic();
+document.body.appendChild(NewDrink);
 // // document.body.appendChild(NewDrink);
 
 
 // const sheet = new CSSStyleSheet();
+
+document.getElementsByTagName('gin-tonic-🫙')[0].style.backgroundColor = 'red';
