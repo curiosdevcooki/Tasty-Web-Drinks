@@ -1,3 +1,4 @@
 # playground
-This is my playground for drinks.
-Enjoy!
+This is my playground for tasty web component drinks.
+
+Cheers!
