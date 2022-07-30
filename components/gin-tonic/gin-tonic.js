@@ -7,6 +7,8 @@ class GinTonic extends HTMLElement {
 
     shadowRoot.innerHTML = `
       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+        
         :host {
           box-sizing: border-box;
           padding: 0;
@@ -22,19 +24,6 @@ class GinTonic extends HTMLElement {
           --color-grey: #ccc;
           --color-yellow: #ffeb3b;
           --color-purple: #d8dee0;
-
-          --font-regular: 'Arson';
-          --font-sloppy: 'HandwritingPlain';
-        }
-
-         @font-face {
-          font-family: var(--font-sloppy);
-          src: url('../fonts/HandwritingPlain.ttf') format('truetype');
-        }
-
-        @font-face {
-          font-family: var(--font-regular);
-          src: url('../fonts/arson-regular-webfont.woff2') format('woff2');
         }
 
         main {
@@ -49,7 +38,6 @@ class GinTonic extends HTMLElement {
           background-color: var(--color-white);
           box-shadow: 2rem black;
           border-radius: 1rem;
-          border: 1px solid var(--color-grey);
           padding: 1rem;
           margin: 1rem;
           }
@@ -58,7 +46,7 @@ class GinTonic extends HTMLElement {
           font-size: 1rem;
           font-weight: thin;
           text-align: top;
-          font-family: var(--font-regular);
+          font-family: 'Homemade Apple', cursive;
           padding: 1rem;
           margin: 1rem;
           color: var(--color-white);
@@ -95,12 +83,10 @@ class GinTonic extends HTMLElement {
 
         #ice {
           grid-area: ice;
-          background-color: transparent;
         }
 
         #lemon {
           grid-area: lemon;
-          margin: -3rem 0 0 1.5rem;
         }
 
         img {
@@ -109,7 +95,7 @@ class GinTonic extends HTMLElement {
         }
 
         h1 {
-          font-family: var(--font-sloppy);
+          font-family: 'Homemade Apple', cursive;
           font-size: 5rem;
           font-weight: bold;
           color: var(--color-white);
@@ -117,9 +103,13 @@ class GinTonic extends HTMLElement {
         }
 
         h2 {
-          font-family: var(--font-sloppy);
+          font-family: 'Homemade Apple', cursive;
           font-size: 10rem;
-          color: var(--color-white);
+          background-color: var(--color-blue);
+          background-image: url('images/lemon.svg');
+          background-blend-mode: overlay;
+          background-clip: text;
+          color: transparent;
           text-align: center;
         }
 
@@ -175,4 +165,4 @@ customElements.define('gin-tonic-🫙', GinTonic);
 
 // const sheet = new CSSStyleSheet();
 
-document.getElementsByTagName('gin-tonic-🫙')[0].style.border = '0.5rem solid var(--color-white)';
+// document.getElementsByTagName('gin-tonic-🫙')[0].style.border = '0.5rem solid var(--color-white)';

@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
 :root{
   box-sizing: border-box;
   padding: 0;
@@ -10,18 +13,8 @@
   --color-green: #147a44;
   --color-white: #fafafa;
   --color-orange: #f49b75;
-  --color-black: #fafafa;
+  --color-black: #080101;
   --color-grey: #ccc;
-
-  --font-regular: 'Arson', cursive;
-}
-
-@font-face {
-    font-family: '--font-regular';
-    src: url('arson-regular-webfont.woff2') format('woff2'),
-         url('arson-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 body {
@@ -40,11 +33,13 @@ main{
 }
 
 h1{
-  font-family: var(--font-regular);
+
+  font-family: 'Homemade Apple', cursive;
   font-size: 10rem;
   font-weight: bold;
+  line-height: 12rem;
   color: var(--color-white);
   text-align: center;
-  margin: 0;
+  margin: 10rem;
   padding: 0;
 }
