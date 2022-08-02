@@ -7,9 +7,9 @@ class GinTonic extends HTMLElement {
 
     shadowRoot.innerHTML = `
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
-        
-        :host {
+       @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+        :host{
           box-sizing: border-box;
           padding: 0;
           margin: 0;
@@ -24,6 +24,7 @@ class GinTonic extends HTMLElement {
           --color-grey: #ccc;
           --color-yellow: #ffeb3b;
           --color-purple: #d8dee0;
+
         }
 
         main {
@@ -36,7 +37,7 @@ class GinTonic extends HTMLElement {
             'tonic tonic';
 
           background-color: var(--color-white);
-          box-shadow: 2rem black;
+          box-shadow: 0 0.5rem 1rem var(--color-black);
           border-radius: 1rem;
           padding: 1rem;
           margin: 1rem;
@@ -44,8 +45,7 @@ class GinTonic extends HTMLElement {
 
         footer {
           font-size: 1rem;
-          font-weight: thin;
-          text-align: top;
+          font-weight: lighter;
           font-family: 'Homemade Apple', cursive;
           padding: 1rem;
           margin: 1rem;
@@ -55,13 +55,13 @@ class GinTonic extends HTMLElement {
           opacity: 0.8;
 
           border-radius: 1rem 1rem 2rem 2rem;
-          box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+          box-shadow: 0 0.5rem 1rem var(--color-black);
         }
 
         description {
-            font-size: 2rem;
-            font-weight: bold;
-            font-style: italic;
+          font-size: 2rem;
+          font-weight: bold;
+          font-style: italic;
         }
 
         #gin {
@@ -91,7 +91,45 @@ class GinTonic extends HTMLElement {
 
         img {
           width: 100%;
-          aspect-ratio: 1/1;
+          aspect-ratio: 1/1;  
+        }
+
+        #ice > img {
+          position: relative;
+          top: 5rem;
+          left: 3rem;
+          animation-name: slideup;
+          animation-duration: 3s;
+        }
+
+
+
+        @keyframes slideup {
+          from {
+            margin-top: 50%;
+          }
+
+          to {
+            margin-top: 0%;
+          }
+        }
+
+        #lemon > img {
+          position: relative;
+          top: 5rem;
+          left: 3rem;
+          animation-name: bounce;
+          animation-duration: 3s;
+        }
+
+        @keyframes bounce {
+          from {
+            transform: rotate(0deg);
+            }
+
+          to {
+            transform: rotate(360deg);
+            }
         }
 
         h1 {
@@ -104,12 +142,12 @@ class GinTonic extends HTMLElement {
 
         h2 {
           font-family: 'Homemade Apple', cursive;
-          font-size: 10rem;
+          font-size: 3rem;
           background-color: var(--color-blue);
           background-image: url('images/lemon.svg');
           background-blend-mode: overlay;
           background-clip: text;
-          color: transparent;
+          color: var(--color-black);
           text-align: center;
         }
 
@@ -142,9 +180,9 @@ class GinTonic extends HTMLElement {
         <footer>
           <description>
           <ul>
-          <li> fill your container with ice-cubes</li>
-          <li> add gin and tonic </li>
-          <li> top with lemon and cucumber</li>
+          <li>fill your container with ice-cubes</li>
+          <li>add gin and tonic</li>
+          <li>top with lemon</li>
           </description>
          </footer>
 
