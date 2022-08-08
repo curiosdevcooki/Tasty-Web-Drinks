@@ -172,7 +172,7 @@ class GinTonic extends HTMLElement {
           </section>
 
           <section id='tonic'>
-            <h2>Tonic — 5 bparts</h2>
+            <h2>Tonic — 5 parts</h2>
           </section>
 
         </main>
