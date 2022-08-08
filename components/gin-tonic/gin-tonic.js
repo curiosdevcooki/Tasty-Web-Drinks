@@ -91,7 +91,7 @@ class GinTonic extends HTMLElement {
 
         img {
           width: 100%;
-          aspect-ratio: 1/1;  
+          aspect-ratio: 1/1;
         }
 
         #ice > img {
@@ -168,11 +168,11 @@ class GinTonic extends HTMLElement {
           </section>
 
           <section id='gin'>
-            <h2>Gin</h2>
+            <h2>Gin — 2 parts</h2>
           </section>
 
           <section id='tonic'>
-            <h2>Tonic</h2>
+            <h2>Tonic — 5 bparts</h2>
           </section>
 
         </main>
