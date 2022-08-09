@@ -116,7 +116,7 @@ class GinTonic extends HTMLElement {
         #gin {
           grid-area: gin;
           background-color: var(--color-blue);
-          box-shadow: inset 0 0 1rem 1em var(--color-white);
+          box-shadow: inset 0 0 1rem 1rem var(--color-white);
           opacity: 0.5;
           border-radius:  0 0 2rem 2rem;
         }
@@ -190,8 +190,14 @@ class GinTonic extends HTMLElement {
             <h2>Gin — 2 parts</h2>
           </section>
 
+<<<<<<< HEAD
           <div id='glass-bottom'>
           </div>
+=======
+          <section id='tonic'>
+            <h2>Tonic — 5 parts</h2>
+          </section>
+>>>>>>> 7492901354e82c3ba221b2f16c2a0529ff844ae8
 
         </main>
 
