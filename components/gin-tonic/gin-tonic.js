@@ -7,7 +7,6 @@ class GinTonic extends HTMLElement {
 
     shadowRoot.innerHTML = `
       <style>
-       @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
         :host{
           box-sizing: border-box;
@@ -20,89 +19,63 @@ class GinTonic extends HTMLElement {
           --color-green: #147a44;
           --color-white: #fafafa;
           --color-orange: #f49b75;
-          --color-black: #fafafa;
+          --color-black: #080101;
           --color-grey: #ccc;
-          --color-yellow: #ffeb3b;
-          --color-purple: #d8dee0;
+        }
 
+        article {
+          font-family: 'Brush Script MT';
+          animation-name: slideup;
+          animation-duration: 2s;
         }
 
         main {
           display: grid;
           grid-template-columns: 0.5fr 0.5fr;
-          grid-template-rows: 10rem 10fr 50fr;
+          grid-template-rows: 10rem 5fr 2fr 5rem;
           grid-template-areas:
             'ice lemon'
+            'tonic tonic'
             'gin gin'
-            'tonic tonic';
+            'bottom bottom';
 
           background-color: var(--color-white);
-          box-shadow: 0 0.5rem 1rem var(--color-black);
+          box-shadow: 0 0.2rem 2rem var(--color-black);
           border-radius: 1rem;
           padding: 1rem;
           margin: 1rem;
+
+          animation-name: slideup;
+          animation-duration: 2s;
           }
 
         footer {
-          font-size: 1rem;
-          font-weight: lighter;
-          font-family: 'Homemade Apple', cursive;
-          padding: 1rem;
-          margin: 1rem;
-          color: var(--color-white);
-          background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F70000%2Fvelka%2Fwood-texture-1385971419t2h.jpg&f=1&nofb=1');
-          background-size: cover;
-          opacity: 0.8;
+          background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/cut-wood-texture-1525942658yoE.jpg');
+          background-size: contain;
 
           border-radius: 1rem 1rem 2rem 2rem;
-          box-shadow: 0 0.5rem 1rem var(--color-black);
+          box-shadow: 0 -0.2rem 0.5rem var(--color-black);
         }
 
-        description {
-          font-size: 2rem;
-          font-weight: bold;
-          font-style: italic;
-        }
-
-        #gin {
-          grid-area: gin;
-          background-color: var(--color-blue);
-          opacity: 0.5;
-        }
-
-        #tonic {
-          grid-area: tonic;
-          background-color: var(--color-blue);
-          opacity: 0.25;
-        }
-
-        #gin:hover, #tonic:hover{
-          background-color: var(--color-grey);
-          color: var(--color-blue);
-        }
 
         #ice {
           grid-area: ice;
+
         }
 
         #lemon {
           grid-area: lemon;
         }
 
-        img {
-          width: 100%;
-          aspect-ratio: 1/1;
-        }
-
         #ice > img {
+          width: 80%;
+
           position: relative;
           top: 5rem;
-          left: 3rem;
+          left: 1rem;
           animation-name: slideup;
           animation-duration: 3s;
         }
-
-
 
         @keyframes slideup {
           from {
@@ -117,12 +90,12 @@ class GinTonic extends HTMLElement {
         #lemon > img {
           position: relative;
           top: 5rem;
-          left: 3rem;
-          animation-name: bounce;
+          left: 1rem;
+          animation-name: rotate;
           animation-duration: 3s;
         }
 
-        @keyframes bounce {
+        @keyframes rotate {
           from {
             transform: rotate(0deg);
             }
@@ -132,48 +105,93 @@ class GinTonic extends HTMLElement {
             }
         }
 
+         #tonic {
+          grid-area: tonic;
+          background-color: var(--color-blue);
+          box-shadow: inset 0 0 2em 1em var(--color-white);
+          opacity: 0.3;
+          border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        #gin {
+          grid-area: gin;
+          background-color: var(--color-blue);
+          box-shadow: inset 0 0 1rem 1em var(--color-white);
+          opacity: 0.5;
+          border-radius:  0 0 2rem 2rem;
+        }
+
+        #tonic:hover, #gin:hover {
+          background-color: var(--color-grey);
+          opacity: 0.75;
+        }
+
+        #glass-bottom {
+          grid-area: bottom;
+          background-color: var(--color-grey);
+          box-shadow: inset 0 0 2em 1em var(--color-white);
+        }
+
         h1 {
-          font-family: 'Homemade Apple', cursive;
           font-size: 5rem;
           font-weight: bold;
           color: var(--color-white);
           text-align: center;
+          margin-top: 0;
         }
 
         h2 {
-          font-family: 'Homemade Apple', cursive;
+          // font-family: Verdana, sans-serif;
           font-size: 3rem;
-          background-color: var(--color-blue);
-          background-image: url('images/lemon.svg');
-          background-blend-mode: overlay;
-          background-clip: text;
-          color: var(--color-black);
           text-align: center;
+          // background-image: url('../images/ice-cube.svg');
+          // background-clip: text;
+          // background-size: cover;
+          // -webkit-background-clip: text;
+          color: yellow;
+        }
+
+        h2:hover{
+          color: darkblue;
+        }
+
+          ul {
+          list-style-type:'✅';
+          text-indent: 2rem;
+          padding: 0.5rem 0 0.5rem 5rem;
+          font-size: 3rem;
+          color: var(--color-white);
+          text-shadow: 0.3rem 0.1rem var(--color-black);
         }
 
       </style>
 
       <article>
 
-        <h1>Gin Tonic</h1>
+        <header>
+          <h1>Gin Tonic</h1>
+        </header>
 
         <main>
 
           <section id='ice'>
-            <img src='../images/ice-cube.svg' alt='icecube'/>
+            <img src='../images/ice cube.svg' alt='icecube'/>
           </section>
 
           <section id='lemon'>
             <img src='../images/lemon.svg' alt='lemon'/>
           </section>
 
+          <section id='tonic'>
+            <h2>Tonic — 5 parts</h2>
+          </section>
+
           <section id='gin'>
             <h2>Gin — 2 parts</h2>
           </section>
 
-          <section id='tonic'>
-            <h2>Tonic — 5 parts</h2>
-          </section>
+          <div id='glass-bottom'>
+          </div>
 
         </main>
 

@@ -33,13 +33,12 @@ main{
 }
 
 h1{
-
-  font-family: 'Homemade Apple', cursive;
+  font-family: 'Brush Script MT';
   font-size: 10rem;
   font-weight: bold;
-  line-height: 12rem;
+  line-height: 7rem;
   color: var(--color-white);
   text-align: center;
-  margin: 10rem;
+  margin-top: 10rem;
   padding: 0;
 }
