@@ -72,7 +72,7 @@ class GinTonic extends HTMLElement {
 
           position: relative;
           top: 5rem;
-          left: 1rem;
+          left: 3rem;
           animation-name: slideup;
           animation-duration: 3s;
         }
@@ -107,7 +107,9 @@ class GinTonic extends HTMLElement {
 
          #tonic {
           grid-area: tonic;
-          background-color: var(--color-blue);
+          display: grid;
+          align-items: end;
+          background-color: lightblue;
           box-shadow: inset 0 0 2em 1em var(--color-white);
           opacity: 0.3;
           border-radius: 0.5rem 0.5rem 0 0;
@@ -144,10 +146,6 @@ class GinTonic extends HTMLElement {
           // font-family: Verdana, sans-serif;
           font-size: 3rem;
           text-align: center;
-          // background-image: url('../images/ice-cube.svg');
-          // background-clip: text;
-          // background-size: cover;
-          // -webkit-background-clip: text;
           color: yellow;
         }
 
@@ -205,6 +203,7 @@ class GinTonic extends HTMLElement {
           <li>fill your container with ice-cubes</li>
           <li>add gin and tonic</li>
           <li>top with lemon</li>
+          </ul>
           </description>
          </footer>
 
