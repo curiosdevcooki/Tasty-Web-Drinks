@@ -190,14 +190,12 @@ class GinTonic extends HTMLElement {
             <h2>Gin — 2 parts</h2>
           </section>
 
-<<<<<<< HEAD
           <div id='glass-bottom'>
           </div>
-=======
+
           <section id='tonic'>
             <h2>Tonic — 5 parts</h2>
           </section>
->>>>>>> 7492901354e82c3ba221b2f16c2a0529ff844ae8
 
         </main>
 
