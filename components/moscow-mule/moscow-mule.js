@@ -65,6 +65,11 @@ class MoscowMule extends HTMLElement {
 
         #lime {
           grid-area: lime;
+
+          background-image: url('../images/lime.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 25% top -75%;;
         }
 
         #ice > img {
