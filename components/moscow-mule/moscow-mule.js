@@ -1,6 +1,6 @@
 
 //Create a tasty, stand-alone Web Component of your drink:
-class MunichMule extends HTMLElement {
+class MoscowMule extends HTMLElement {
   constructor() {
     super();
     const shadowRoot = this.attachShadow({ mode: 'open' });
@@ -34,9 +34,9 @@ class MunichMule extends HTMLElement {
           grid-template-columns: 0.5fr 0.5fr;
           grid-template-rows: 10rem 5fr 2fr 5rem;
           grid-template-areas:
-            'ice cucumber'
+            'ice lime'
             'spicey spicey'
-            'gin gin'
+            'vodka vodka'
             'bottom bottom';
 
           background-color: var(--color-white);
@@ -63,8 +63,8 @@ class MunichMule extends HTMLElement {
 
         }
 
-        #cucumber {
-          grid-area: cucumber;
+        #lime {
+          grid-area: lime;
         }
 
         #ice > img {
@@ -87,12 +87,12 @@ class MunichMule extends HTMLElement {
           }
         }
 
-        #cucumber > img {
-          width: 40%;
+        #lime > img {
+          width: 80%;
           rotate: 30deg;
 
           position: relative;
-          top: 0rem;
+          top: 3rem;
           left: 1rem;
 
           animation-name: rotate ;
@@ -121,15 +121,15 @@ class MunichMule extends HTMLElement {
           border-radius: 0.5rem 0.5rem 0 0;
         }
 
-        #gin {
-          grid-area: gin;
+        #vodka {
+          grid-area: vodka;
           background-color: var(--color-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
           opacity: 0.5;
           border-radius:  0 0 2rem 2rem;
         }
 
-        #spicey:hover, #gin:hover {
+        #spicey:hover, #vodka:hover {
           background-color: var(--color-grey);
           opacity: 0.75;
         }
@@ -149,10 +149,10 @@ class MunichMule extends HTMLElement {
         }
 
         h2 {
-          // font-family: Verdana, sans-serif;
-          font-size: 3rem;
+          font-size: 3.5rem;
           text-align: center;
-          color: var(--color-green);
+          color: var(--color-orange);
+          text-shadow: 0.2rem 0.2rem var(--color-black);
         }
 
         h2:hover{
@@ -173,7 +173,7 @@ class MunichMule extends HTMLElement {
       <article>
 
         <header>
-          <h1>Munich Mule</h1>
+          <h1>Moscow Mule</h1>
         </header>
 
         <main>
@@ -182,16 +182,16 @@ class MunichMule extends HTMLElement {
             <img src='../images/ice cube.svg' alt='icecube'/>
           </section>
 
-          <section id='cucumber'>
-            <img src='../images/cucumber.svg' alt='cucumber'/>
+          <section id='lime'>
+            <img src='../images/lime.svg' alt='lime'/>
           </section>
 
           <section id='spicey'>
             <h2>Spicey Ginger — 5 parts</h2>
           </section>
 
-          <section id='gin'>
-            <h2>Gin — 2 parts</h2>
+          <section id='vodka'>
+            <h2>Vodka — 2 parts</h2>
           </section>
 
           <div id='glass-bottom'>
@@ -207,8 +207,8 @@ class MunichMule extends HTMLElement {
           <description>
           <ul>
           <li>fill your container with ice-cubes</li>
-          <li>add gin and spicey ginger</li>
-          <li>top with cucumber</li>
+          <li>add vodka and spicey ginger</li>
+          <li>top with cucumber and lime</li>
           </ul>
           </description>
          </footer>
@@ -218,16 +218,16 @@ class MunichMule extends HTMLElement {
   }
 }
 
-customElements.define('munich-mule-🫙', MunichMule);
+customElements.define('moscow-mule-🫙', MoscowMule);
 
-// const el = document.createElement('gin-spicey-🫙');
+// const el = document.createElement('vodka-spicey-🫙');
 // document.body.appendChild(el);
 
-// const NewDrink = new GinSpicey Ginger();
+// const NewDrink = new VodkaSpicey Vodkager();
 // document.body.appendChild(NewDrink);
 // // document.body.appendChild(NewDrink);
 
 
 // const sheet = new CSSStyleSheet();
 
-// document.getElementsByTagName('gin-spicey-🫙')[0].style.border = '0.5rem solid var(--color-white)';
+// document.getElementsByTagName('vodka-spicey-🫙')[0].style.border = '0.5rem solid var(--color-white)';
