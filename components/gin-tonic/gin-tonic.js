@@ -143,10 +143,10 @@ class GinTonic extends HTMLElement {
         }
 
         h2 {
-          // font-family: Verdana, sans-serif;
-          font-size: 3rem;
+          font-size: 3.5rem;
           text-align: center;
           color: yellow;
+          text-shadow: 0.2rem 0.2rem var(--color-black);
         }
 
         h2:hover{
