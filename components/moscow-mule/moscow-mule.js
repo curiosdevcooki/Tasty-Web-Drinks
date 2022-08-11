@@ -69,7 +69,7 @@ class MoscowMule extends HTMLElement {
           background-image: url('../images/lime.svg');
           background-size: contain;
           background-repeat: no-repeat;
-          background-position: 25% top -75%;;
+          background-position: bottom right;
         }
 
         #ice > img {
