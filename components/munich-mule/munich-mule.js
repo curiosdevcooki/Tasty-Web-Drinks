@@ -87,7 +87,7 @@ class MunichMule extends HTMLElement {
           }
         }
 
-        #cucumber > img {
+        #cucumber > img:nth-child(1) {
           width: 40%;
           rotate: 30deg;
 
@@ -96,6 +96,15 @@ class MunichMule extends HTMLElement {
           left: 1rem;
 
           animation-name: rotate ;
+          animation-duration: 3s;
+        }
+
+         #cucumber > img:nth-child(2) {
+          width: 80%;
+          position: relative;
+          top: -15rem;
+          left: 1rem;
+          animation-name: rotate;
           animation-duration: 3s;
         }
 
@@ -184,6 +193,7 @@ class MunichMule extends HTMLElement {
 
           <section id='cucumber'>
             <img src='../images/cucumber.svg' alt='cucumber'/>
+            <img src='../images/lime.svg' alt='lime'/>
           </section>
 
           <section id='spicey'>
@@ -208,7 +218,7 @@ class MunichMule extends HTMLElement {
           <ul>
           <li>fill your container with ice-cubes</li>
           <li>add gin and spicey ginger</li>
-          <li>top with cucumber</li>
+          <li>top with cucumber and lime</li>
           </ul>
           </description>
          </footer>

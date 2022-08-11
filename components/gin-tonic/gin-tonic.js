@@ -87,10 +87,18 @@ class GinTonic extends HTMLElement {
           }
         }
 
-        #lemon > img {
+        #lemon > img:nth-child(1) {
           position: relative;
           top: 5rem;
           left: 1rem;
+          animation-name: rotate;
+          animation-duration: 3s;
+        }
+
+         #lemon > img:nth-child(2) {
+          position: relative;
+          bottom: 7rem;
+          left: -3rem;
           animation-name: rotate;
           animation-duration: 3s;
         }
@@ -177,7 +185,8 @@ class GinTonic extends HTMLElement {
           </section>
 
           <section id='lemon'>
-            <img src='../images/lemon.svg' alt='lemon'/>
+          <img src='../images/lemon.svg' alt='lemon'/>
+          <img src='../images/lemon.svg' alt='lemon'/>
           </section>
 
           <section id='tonic'>
@@ -199,13 +208,15 @@ class GinTonic extends HTMLElement {
 
         <footer>
           <description>
-          <ul>
-          <li>fill your container with ice-cubes</li>
-          <li>add gin and tonic</li>
-          <li>top with lemon</li>
-          </ul>
+            <ul>
+              <li>fill your container with ice-cubes</li>
+              <li>add gin and tonic</li>
+              <li>top with lemon-slices</li>
+            </ul>
           </description>
          </footer>
+
+       
 
         </article>
       `;
