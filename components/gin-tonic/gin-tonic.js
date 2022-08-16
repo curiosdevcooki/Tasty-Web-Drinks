@@ -228,8 +228,8 @@ customElements.define('gin-tonic-🫙', GinTonic);
 // const el = document.createElement('gin-tonic-🫙');
 // document.body.appendChild(el);
 
-// const NewDrink = new GinTonic();
-// document.body.appendChild(NewDrink);
+const NewDrink = new GinTonic();
+document.body.appendChild(NewDrink);
 // // document.body.appendChild(NewDrink);
 
 
