@@ -24,7 +24,7 @@ class GinTonic extends HTMLElement {
         }
 
         article {
-          font-family: 'Brush Script MT';
+          font-family: var(--font-handwritten);
           animation-name: slideup;
           animation-duration: 2s;
         }
@@ -128,7 +128,7 @@ class GinTonic extends HTMLElement {
           background-color: var(--color-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
           opacity: 0.5;
-          border-radius:  0 0 2rem 2rem;
+          border-radius: 0 0 2rem 2rem;
         }
 
         #tonic:hover, #gin:hover {

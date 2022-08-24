@@ -24,7 +24,7 @@ class MoscowMule extends HTMLElement {
         }
 
         article {
-          font-family: 'Brush Script MT';
+          font-family: var(--font-handwritten);
           animation-name: slideup;
           animation-duration: 2s;
         }
