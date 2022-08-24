@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 :root{
   box-sizing: border-box;
@@ -15,6 +16,8 @@
   --color-orange: #f49b75;
   --color-black: #080101;
   --color-grey: #ccc;
+
+  --font-handwritten: 'Caveat', cursive;
 }
 
 body {
@@ -34,7 +37,7 @@ main{
 }
 
 h1{
-  font-family: 'Brush Script MT';
+  font-family: var(--font-handwritten);
   font-size: 10rem;
   font-weight: bold;
   line-height: 7rem;
