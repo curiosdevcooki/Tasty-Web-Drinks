@@ -15,12 +15,10 @@ class GinTonic extends HTMLElement {
 
           font-size: 62.5%;
 
-          --color-blue: #00bcd4;
-          --color-green: #147a44;
           --color-white: #fafafa;
-          --color-orange: #f49b75;
-          --color-black: #080101;
           --color-grey: #ccc;
+          --color-black: #080101;
+          --color-light-blue: #0080FF80;
         }
 
         article {
@@ -60,7 +58,6 @@ class GinTonic extends HTMLElement {
 
         #ice {
           grid-area: ice;
-
         }
 
         #lemon {
@@ -117,9 +114,9 @@ class GinTonic extends HTMLElement {
           grid-area: tonic;
           display: grid;
           align-items: end;
-          background-color: lightblue;
+          background: linear-gradient(180deg, rgba(49,49,200,1) 25%, rgba(0,212,255,1) 100%);
+          opacity: 0.45;
           box-shadow: inset 0 0 2em 1em var(--color-white);
-          opacity: 0.3;
           border-radius: 0.5rem 0.5rem 0 0;
         }
 
@@ -127,7 +124,6 @@ class GinTonic extends HTMLElement {
           grid-area: gin;
           background-color: var(--color-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
-          opacity: 0.5;
           border-radius: 0 0 2rem 2rem;
         }
 
@@ -152,6 +148,7 @@ class GinTonic extends HTMLElement {
 
         h2 {
           font-size: 3.5rem;
+          letter-spacing: 0.1rem;
           text-align: center;
           color: yellow;
           text-shadow: 0.2rem 0.2rem var(--color-black);
@@ -161,11 +158,11 @@ class GinTonic extends HTMLElement {
           color: darkblue;
         }
 
-          ul {
+        ul {
           list-style-type:'✅';
           text-indent: 2rem;
           padding: 0.5rem 0 0.5rem 5rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
           color: var(--color-white);
           text-shadow: 0.3rem 0.1rem var(--color-black);
         }
@@ -216,8 +213,6 @@ class GinTonic extends HTMLElement {
           </description>
          </footer>
 
-       
-
         </article>
       `;
   }
@@ -228,10 +223,8 @@ customElements.define('gin-tonic-🫙', GinTonic);
 // const el = document.createElement('gin-tonic-🫙');
 // document.body.appendChild(el);
 
-const NewDrink = new GinTonic();
-document.body.appendChild(NewDrink);
-// // document.body.appendChild(NewDrink);
-
+// const NewDrink = new GinTonic();
+// document.body.appendChild(NewDrink);
 
 // const sheet = new CSSStyleSheet();
 
