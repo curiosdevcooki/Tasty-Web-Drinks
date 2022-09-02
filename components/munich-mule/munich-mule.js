@@ -15,12 +15,12 @@ class MunichMule extends HTMLElement {
 
           font-size: 62.5%;
 
-          --color-blue: #00bcd4;
-          --color-green: #147a44;
           --color-white: #fafafa;
-          --color-orange: #f49b75;
-          --color-black: #080101;
           --color-grey: #ccc;
+          --color-black: #080101;
+          --color-light-blue: #0080FF80;
+          --color-lighter-blue: #0060FF30;
+          --color-tourquoise: RGBA(0,212,255,0.33);
         }
 
         article {
@@ -60,7 +60,6 @@ class MunichMule extends HTMLElement {
 
         #ice {
           grid-area: ice;
-
         }
 
         #cucumber {
@@ -124,9 +123,9 @@ class MunichMule extends HTMLElement {
           grid-area: spicey;
           display: grid;
           align-items: end;
-          background-color: lightblue;
+          background: linear-gradient(180deg, rgba(49,49,200,1) 25%, rgba(0,212,255,1) 100%);
+          opacity: 0.45;
           box-shadow: inset 0 0 2em 1em var(--color-white);
-          opacity: 0.3;
           border-radius: 0.5rem 0.5rem 0 0;
         }
 
@@ -134,12 +133,11 @@ class MunichMule extends HTMLElement {
           grid-area: gin;
           background-color: var(--color-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
-          opacity: 0.5;
           border-radius:  0 0 2rem 2rem;
         }
 
         #spicey:hover, #gin:hover {
-          background-color: var(--color-grey);
+          background-color: var(--color-lighter-blue);
           opacity: 0.75;
         }
 
@@ -159,20 +157,22 @@ class MunichMule extends HTMLElement {
 
         h2 {
           font-size: 3.5rem;
+          letter-spacing: -0.1rem;
           text-align: center;
           color: var(--color-green);
           text-shadow: 0.2rem 0.2rem var(--color-black);
+          z-index: 1;
         }
 
         h2:hover{
           color: darkblue;
         }
 
-          ul {
+        ul {
           list-style-type:'✅';
           text-indent: 2rem;
           padding: 0.5rem 0 0.5rem 5rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
           color: var(--color-white);
           text-shadow: 0.3rem 0.1rem var(--color-black);
         }
@@ -186,7 +186,6 @@ class MunichMule extends HTMLElement {
         </header>
 
         <main>
-
           <section id='ice'>
             <img src='../images/ice cube.svg' alt='icecube'/>
           </section>
@@ -210,16 +209,15 @@ class MunichMule extends HTMLElement {
           <section id='spicey'>
             <h2>Spicey Ginger — 5 parts</h2>
           </section>
-
         </main>
 
         <footer>
           <description>
-          <ul>
-          <li>fill your container with ice-cubes</li>
-          <li>add gin and spicey ginger</li>
-          <li>top with cucumber and lime</li>
-          </ul>
+            <ul>
+              <li>fill your container with ice-cubes</li>
+              <li>add gin and spicey ginger</li>
+              <li>top with cucumber and lime</li>
+            </ul>
           </description>
          </footer>
 

@@ -15,12 +15,12 @@ class MoscowMule extends HTMLElement {
 
           font-size: 62.5%;
 
-          --color-blue: #00bcd4;
-          --color-green: #147a44;
           --color-white: #fafafa;
-          --color-orange: #f49b75;
-          --color-black: #080101;
           --color-grey: #ccc;
+          --color-black: #080101;
+          --color-light-blue: #0080FF80;
+          --color-lighter-blue: #0060FF30;
+          --color-tourquoise: RGBA(0,212,255,0.33);
         }
 
         article {
@@ -120,18 +120,17 @@ class MoscowMule extends HTMLElement {
           grid-area: spicey;
           display: grid;
           align-items: end;
-          background-color: lightblue;
+          background: linear-gradient(180deg, rgba(49,49,200,1) 25%, rgba(0,212,255,1) 100%);
+          opacity: 0.45;
           box-shadow: inset 0 0 2em 1em var(--color-white);
-          opacity: 0.3;
           border-radius: 0.5rem 0.5rem 0 0;
         }
 
         #vodka {
           grid-area: vodka;
-          background-color: var(--color-blue);
+          background-color: var(--color-tourquoise);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
-          opacity: 0.5;
-          border-radius:  0 0 2rem 2rem;
+          border-radius: 0 0 2rem 2rem;
         }
 
         #spicey:hover, #vodka:hover {
@@ -155,6 +154,7 @@ class MoscowMule extends HTMLElement {
 
         h2 {
           font-size: 3.5rem;
+          letter-spacing: -0.1rem;
           text-align: center;
           color: var(--color-orange);
           text-shadow: 0.2rem 0.2rem var(--color-black);
@@ -164,11 +164,11 @@ class MoscowMule extends HTMLElement {
           color: darkblue;
         }
 
-          ul {
+        ul {
           list-style-type:'✅';
           text-indent: 2rem;
           padding: 0.5rem 0 0.5rem 5rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
           color: var(--color-white);
           text-shadow: 0.3rem 0.1rem var(--color-black);
         }
@@ -210,11 +210,11 @@ class MoscowMule extends HTMLElement {
 
         <footer>
           <description>
-          <ul>
-          <li>fill your container with ice-cubes</li>
-          <li>add vodka and spicey ginger</li>
-          <li>top with cucumber and lime</li>
-          </ul>
+            <ul>
+              <li>fill your container with ice-cubes</li>
+              <li>add vodka and spicey ginger</li>
+              <li>top with lime</li>
+            </ul>
           </description>
          </footer>
 
