@@ -18,9 +18,9 @@ class MunichMule extends HTMLElement {
           --color-white: #fafafa;
           --color-grey: #ccc;
           --color-black: #080101;
-          --color-light-blue: #0080FF80;
-          --color-lighter-blue: #0060FF30;
-          --color-tourquoise: RGBA(0,212,255,0.33);
+          --color-light-blue: #00d4ff80;
+          --color-darker-blue: #3131c8;
+          --color-green: #22d956;
         }
 
         article {
@@ -123,7 +123,7 @@ class MunichMule extends HTMLElement {
           grid-area: spicey;
           display: grid;
           align-items: end;
-          background: linear-gradient(180deg, rgba(49,49,200,1) 25%, rgba(0,212,255,1) 100%);
+          background: linear-gradient(180deg, var(--color-darker-blue) 25%, var(--color-light-blue) 100%);
           opacity: 0.45;
           box-shadow: inset 0 0 2em 1em var(--color-white);
           border-radius: 0.5rem 0.5rem 0 0;
@@ -166,6 +166,14 @@ class MunichMule extends HTMLElement {
 
         h2:hover{
           color: darkblue;
+        }
+
+        #gin > h2 {
+          color: var(--color-white);
+        }
+
+        #spicey > h2 {
+          color: var(--color-green);
         }
 
         ul {

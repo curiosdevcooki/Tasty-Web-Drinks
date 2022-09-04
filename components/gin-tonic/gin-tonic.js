@@ -18,7 +18,10 @@ class GinTonic extends HTMLElement {
           --color-white: #fafafa;
           --color-grey: #ccc;
           --color-black: #080101;
-          --color-light-blue: #0080FF80;
+          --color-light-blue: #00d4ff80;
+          --color-darker-blue: #3131c8;
+          --color-orange: #f49b75;
+          --color-yellow: #f6ec0d;
         }
 
         article {
@@ -114,7 +117,7 @@ class GinTonic extends HTMLElement {
           grid-area: tonic;
           display: grid;
           align-items: end;
-          background: linear-gradient(180deg, rgba(49,49,200,1) 25%, rgba(0,212,255,1) 100%);
+          background: linear-gradient(180deg, var(--color-darker-blue) 25%, var(--color-light-blue) 100%);
           opacity: 0.45;
           box-shadow: inset 0 0 2em 1em var(--color-white);
           border-radius: 0.5rem 0.5rem 0 0;
@@ -150,12 +153,19 @@ class GinTonic extends HTMLElement {
           font-size: 3.5rem;
           letter-spacing: 0.1rem;
           text-align: center;
-          color: yellow;
           text-shadow: 0.2rem 0.2rem var(--color-black);
         }
 
         h2:hover{
           color: darkblue;
+        }
+
+        #gin > h2 {
+          color: var(--color-white);
+        }
+
+        #tonic > h2 {
+          color: var(--color-yellow);
         }
 
         ul {
