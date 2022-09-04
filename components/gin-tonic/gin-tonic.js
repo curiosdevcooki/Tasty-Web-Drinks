@@ -228,7 +228,7 @@ class GinTonic extends HTMLElement {
   }
 }
 
-customElements.define('gin-tonic-🫙', GinTonic);
+customElements.define('gin-tonic', GinTonic);
 
 // const el = document.createElement('gin-tonic-🫙');
 // document.body.appendChild(el);
