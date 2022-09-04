@@ -131,13 +131,13 @@ class MunichMule extends HTMLElement {
 
         #gin {
           grid-area: gin;
-          background-color: var(--color-blue);
+          background-color: var(--color-light-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
           border-radius:  0 0 2rem 2rem;
         }
 
         #spicey:hover, #gin:hover {
-          background-color: var(--color-lighter-blue);
+          background-color: var(--color-light-blue);
           opacity: 0.75;
         }
 
@@ -234,7 +234,7 @@ class MunichMule extends HTMLElement {
   }
 }
 
-customElements.define('munich-mule-🫙', MunichMule);
+customElements.define('munich-mule', MunichMule);
 
 // const el = document.createElement('gin-spicey-🫙');
 // document.body.appendChild(el);

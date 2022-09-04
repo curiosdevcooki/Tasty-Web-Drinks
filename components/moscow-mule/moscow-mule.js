@@ -80,7 +80,7 @@ class MoscowMule extends HTMLElement {
           width: 80%;
 
           position: relative;
-          top: 5rem;
+          top: 9rem;
           left: 3rem;
           animation-name: slideup;
           animation-duration: 3s;
@@ -234,7 +234,7 @@ class MoscowMule extends HTMLElement {
   }
 }
 
-customElements.define('moscow-mule-🫙', MoscowMule);
+customElements.define('moscow-mule', MoscowMule);
 
 // const el = document.createElement('vodka-spicey-🫙');
 // document.body.appendChild(el);
