@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 :root{
@@ -9,19 +7,13 @@
   margin: 0;
   font-size: 62.5%;
 
-
-  --color-blue: #00bcd4;
-  --color-green: #147a44;
   --color-white: #fafafa;
   --color-orange: #f49b75;
-  --color-yellow: #f9e79f;
-  --color-black: #080101;
-  --color-grey: #ccc;
 
   --font-handwritten: 'Caveat', cursive;
 }
 
-body {
+body{
   background-color: var(--color-orange);
   background-image: url('https://cdn.pixabay.com/photo/2013/07/12/13/24/leaves-146984_960_720.png');
   background-size: contain;
@@ -46,4 +38,12 @@ h1{
   text-align: center;
   margin-top: 10rem;
   padding: 0;
+}
+
+p{
+  font-family: var(--font-handwritten);
+  font-size: 4rem;
+  line-height: 2rem;
+  color: var(--color-white);
+  padding-left: 4rem;
 }

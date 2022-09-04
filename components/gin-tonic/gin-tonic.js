@@ -89,7 +89,7 @@ class GinTonic extends HTMLElement {
 
         #lemon > img:nth-child(1) {
           position: relative;
-          top: 5rem;
+          top: 3rem;
           left: 1rem;
           animation-name: rotate;
           animation-duration: 3s;
@@ -97,7 +97,7 @@ class GinTonic extends HTMLElement {
 
          #lemon > img:nth-child(2) {
           position: relative;
-          bottom: 7rem;
+          bottom: 13rem;
           left: -3rem;
           animation-name: rotate;
           animation-duration: 3s;
@@ -125,7 +125,7 @@ class GinTonic extends HTMLElement {
 
         #gin {
           grid-area: gin;
-          background-color: var(--color-blue);
+          background-color: var(--color-light-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
           border-radius: 0 0 2rem 2rem;
         }
@@ -230,7 +230,7 @@ class GinTonic extends HTMLElement {
 
 customElements.define('gin-tonic', GinTonic);
 
-// const el = document.createElement('gin-tonic-🫙');
+// const el = document.createElement('gin-tonic');
 // document.body.appendChild(el);
 
 // const NewDrink = new GinTonic();
@@ -238,4 +238,4 @@ customElements.define('gin-tonic', GinTonic);
 
 // const sheet = new CSSStyleSheet();
 
-// document.getElementsByTagName('gin-tonic-🫙')[0].style.border = '0.5rem solid var(--color-white)';
+// document.getElementsByTagName('gin-tonic')[0].style.border = '0.5rem solid var(--color-white)';
