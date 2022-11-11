@@ -195,12 +195,12 @@ class MunichMule extends HTMLElement {
 
         <main>
           <section id='ice'>
-            <img src='../images/ice cube.svg' alt='icecube'/>
+            <img src='/tasty-web-drinks/images/ice-cube.svg' alt='icecube' alt='icecube'/>
           </section>
 
           <section id='cucumber'>
-            <img src='../images/cucumber.svg' alt='cucumber'/>
-            <img src='../images/lime.svg' alt='lime'/>
+            <img src='/tasty-web-drinks/images/cucumber.svg' alt='cucumber'/>
+            <img src='/tasty-web-drinks/images/lime.svg' alt='lime'/>
           </section>
 
           <section id='spicey'>
