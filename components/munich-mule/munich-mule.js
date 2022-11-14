@@ -32,7 +32,7 @@ class MunichMule extends HTMLElement {
         main {
           display: grid;
           grid-template-columns: 0.5fr 0.5fr;
-          grid-template-rows: 10rem 5fr 2fr 5rem;
+          grid-template-rows: 10rem 5fr 2fr 8rem;
           grid-template-areas:
             'ice cucumber'
             'spicey spicey'
@@ -40,6 +40,7 @@ class MunichMule extends HTMLElement {
             'bottom bottom';
 
           background-color: var(--color-white);
+          opacity: 0.9;
           box-shadow: 0 0.2rem 2rem var(--color-black);
           border-radius: 1rem;
           padding: 1rem;
@@ -50,9 +51,9 @@ class MunichMule extends HTMLElement {
           }
 
         footer {
+          height: 5rem;
           background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/cut-wood-texture-1525942658yoE.jpg');
           background-size: contain;
-
           border-radius: 1rem 1rem 2rem 2rem;
           box-shadow: 0 -0.2rem 0.5rem var(--color-black);
         }
@@ -148,7 +149,7 @@ class MunichMule extends HTMLElement {
         }
 
         h1 {
-          font-size: 5rem;
+          font-size: calc(3rem + 1vw);
           font-weight: bold;
           color: var(--color-white);
           text-align: center;
@@ -156,7 +157,7 @@ class MunichMule extends HTMLElement {
         }
 
         h2 {
-          font-size: 3.5rem;
+          font-size: calc(2rem + 1vw);
           letter-spacing: -0.1rem;
           text-align: center;
           color: var(--color-green);
@@ -169,20 +170,11 @@ class MunichMule extends HTMLElement {
         }
 
         #gin > h2 {
-          color: var(--color-white);
+          color: var(--color-orange);
         }
 
         #spicey > h2 {
           color: var(--color-green);
-        }
-
-        ul {
-          list-style-type:'✅';
-          text-indent: 2rem;
-          padding: 0.5rem 0 0.5rem 5rem;
-          font-size: 2.5rem;
-          color: var(--color-white);
-          text-shadow: 0.3rem 0.1rem var(--color-black);
         }
 
       </style>
@@ -204,37 +196,29 @@ class MunichMule extends HTMLElement {
           </section>
 
           <section id='spicey'>
-            <h2>Spicey Ginger — 5 parts</h2>
+            <h2>Spicey Ginger</h2>
           </section>
 
           <section id='gin'>
-            <h2>Gin — 2 parts</h2>
+            <h2>Gin</h2>
           </section>
 
           <div id='glass-bottom'>
           </div>
 
           <section id='spicey'>
-            <h2>Spicey Ginger — 5 parts</h2>
+            <h2>Spicey Ginger</h2>
           </section>
         </main>
 
-        <footer>
-          <description>
-            <ul>
-              <li>fill your container with ice-cubes</li>
-              <li>add gin and spicey ginger</li>
-              <li>top with cucumber and lime</li>
-            </ul>
-          </description>
-         </footer>
+        <footer id='coaster'></footer>
 
         </article>
       `;
   }
 }
 
-customElements.define('munich-mule', MunichMule);
+customElements.define('munich-mule-🥒', MunichMule);
 
 // const el = document.createElement('gin-spicey-🫙');
 // document.body.appendChild(el);

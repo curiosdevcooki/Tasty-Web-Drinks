@@ -20,7 +20,6 @@ class GinTonic extends HTMLElement {
           --color-black: #080101;
           --color-light-blue: #00d4ff80;
           --color-darker-blue: #3131c8;
-          --color-orange: #f49b75;
           --color-yellow: #f6ec0d;
         }
 
@@ -33,7 +32,7 @@ class GinTonic extends HTMLElement {
         main {
           display: grid;
           grid-template-columns: 0.5fr 0.5fr;
-          grid-template-rows: 10rem 5fr 2fr 5rem;
+          grid-template-rows: 10rem 5fr 2fr 8rem;
           grid-template-areas:
             'ice lemon'
             'tonic tonic'
@@ -41,6 +40,7 @@ class GinTonic extends HTMLElement {
             'bottom bottom';
 
           background-color: var(--color-white);
+          opacity: 0.9;
           box-shadow: 0 0.2rem 2rem var(--color-black);
           border-radius: 1rem;
           padding: 1rem;
@@ -51,9 +51,9 @@ class GinTonic extends HTMLElement {
           }
 
         footer {
+          height: 5rem;
           background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/cut-wood-texture-1525942658yoE.jpg');
           background-size: contain;
-
           border-radius: 1rem 1rem 2rem 2rem;
           box-shadow: 0 -0.2rem 0.5rem var(--color-black);
         }
@@ -69,7 +69,6 @@ class GinTonic extends HTMLElement {
 
         #ice > img {
           width: 80%;
-
           position: relative;
           top: 5rem;
           left: 3rem;
@@ -141,8 +140,10 @@ class GinTonic extends HTMLElement {
           box-shadow: inset 0 0 2em 1em var(--color-white);
         }
 
+
+
         h1 {
-          font-size: 5rem;
+          font-size: calc(3rem + 1vw);
           font-weight: bold;
           color: var(--color-white);
           text-align: center;
@@ -150,7 +151,7 @@ class GinTonic extends HTMLElement {
         }
 
         h2 {
-          font-size: 3.5rem;
+          font-size: calc(2rem + 1vw);
           letter-spacing: 0.1rem;
           text-align: center;
           text-shadow: 0.2rem 0.2rem var(--color-black);
@@ -161,20 +162,11 @@ class GinTonic extends HTMLElement {
         }
 
         #gin > h2 {
-          color: var(--color-white);
+          color: var(--color-orange);
         }
 
         #tonic > h2 {
           color: var(--color-yellow);
-        }
-
-        ul {
-          list-style-type:'✅';
-          text-indent: 2rem;
-          padding: 0.5rem 0 0.5rem 5rem;
-          font-size: 2.5rem;
-          color: var(--color-white);
-          text-shadow: 0.3rem 0.1rem var(--color-black);
         }
 
       </style>
@@ -197,45 +189,26 @@ class GinTonic extends HTMLElement {
           </section>
 
           <section id='tonic'>
-            <h2>Tonic — 5 parts</h2>
+            <h2>Tonic</h2>
           </section>
 
           <section id='gin'>
-            <h2>Gin — 2 parts</h2>
+            <h2>Gin</h2>
           </section>
 
           <div id='glass-bottom'>
           </div>
 
           <section id='tonic'>
-            <h2>Tonic — 5 parts</h2>
+            <h2>Tonic</h2>
           </section>
 
         </main>
 
-        <footer>
-          <description>
-            <ul>
-              <li>fill your container with ice-cubes</li>
-              <li>add gin and tonic</li>
-              <li>top with lemon-slices</li>
-            </ul>
-          </description>
-         </footer>
+        <footer id='coaster'></footer>
 
-        </article>
-      `;
+      </article>`;
   }
 }
 
-customElements.define('gin-tonic', GinTonic);
-
-// const el = document.createElement('gin-tonic');
-// document.body.appendChild(el);
-
-// const NewDrink = new GinTonic();
-// document.body.appendChild(NewDrink);
-
-// const sheet = new CSSStyleSheet();
-
-// document.getElementsByTagName('gin-tonic')[0].style.border = '0.5rem solid var(--color-white)';
+customElements.define('gin-tonic-🍋', GinTonic);
