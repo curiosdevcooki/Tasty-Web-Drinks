@@ -23,7 +23,7 @@ body{
 main{
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(0, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(0, 30rem));
   gap: 10rem;
   justify-content: center;
   align-content: center;
@@ -31,19 +31,18 @@ main{
 
 h1{
   font-family: var(--font-handwritten);
-  font-size: 10rem;
+  font-size: calc(5rem + 1vw);
   font-weight: bold;
-  line-height: 7rem;
   color: var(--color-white);
   text-align: center;
-  margin-top: 10rem;
   padding: 0;
 }
 
-p{
+h2{
   font-family: var(--font-handwritten);
-  font-size: 4rem;
+  font-size: calc(2rem + 1vw);
   line-height: 2rem;
   color: var(--color-white);
   padding-left: 4rem;
+  text-align: center;
 }
