@@ -58,7 +58,6 @@ class GinTonic extends HTMLElement {
           box-shadow: 0 -0.2rem 0.5rem var(--color-black);
         }
 
-
         #ice {
           grid-area: ice;
         }
@@ -140,8 +139,6 @@ class GinTonic extends HTMLElement {
           box-shadow: inset 0 0 2em 1em var(--color-white);
         }
 
-
-
         h1 {
           font-size: calc(3rem + 1vw);
           font-weight: bold;
@@ -168,17 +165,19 @@ class GinTonic extends HTMLElement {
         #tonic > h2 {
           color: var(--color-yellow);
         }
-
+        
+        a {
+          color: var(--color-white);
+        }
       </style>
 
       <article>
 
         <header>
-          <h1>Gin Tonic</h1>
+          <h1><a href='https://www.thomas-henry.com/drinks/gin-tonic/'>Gin Tonic</a></h1>
         </header>
 
         <main>
-
           <section id='ice'>
             <img src='/tasty-web-drinks/images/ice-cube.svg' alt='icecube'/>
           </section>
@@ -202,7 +201,6 @@ class GinTonic extends HTMLElement {
           <section id='tonic'>
             <h2>Tonic</h2>
           </section>
-
         </main>
 
         <footer id='coaster'></footer>
