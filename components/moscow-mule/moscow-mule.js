@@ -22,7 +22,6 @@ class MoscowMule extends HTMLElement {
           --color-darker-blue: #3131c8;
           --color-orange: #f49b75;
           --color-yellow: #f6ec0d;
-          --color-tourquoise: RGBA(0,212,255,0.33);
           --color-green: #22d956;
 
         }
@@ -36,14 +35,14 @@ class MoscowMule extends HTMLElement {
         main {
           display: grid;
           grid-template-columns: 0.5fr 0.5fr;
-          grid-template-rows: 10rem 5fr 2fr 5rem;
+          grid-template-rows: 10rem 5fr 2fr 8rem;
           grid-template-areas:
             'ice lime'
             'spicey spicey'
             'vodka vodka'
             'bottom bottom';
-
           background-color: var(--color-white);
+          opacity: 0.9;
           box-shadow: 0 0.2rem 2rem var(--color-black);
           border-radius: 1rem;
           padding: 1rem;
@@ -54,9 +53,9 @@ class MoscowMule extends HTMLElement {
           }
 
         footer {
+          height: 5rem;
           background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/cut-wood-texture-1525942658yoE.jpg');
           background-size: contain;
-
           border-radius: 1rem 1rem 2rem 2rem;
           box-shadow: 0 -0.2rem 0.5rem var(--color-black);
         }
@@ -132,7 +131,7 @@ class MoscowMule extends HTMLElement {
 
         #vodka {
           grid-area: vodka;
-          background-color: var(--color-tourquoise);
+          background-color: var(--color-light-blue);
           box-shadow: inset 0 0 1rem 1rem var(--color-white);
           border-radius: 0 0 2rem 2rem;
         }
@@ -149,7 +148,7 @@ class MoscowMule extends HTMLElement {
         }
 
         h1 {
-          font-size: 5rem;
+          font-size: calc(3rem + 1vw);
           font-weight: bold;
           color: var(--color-white);
           text-align: center;
@@ -157,7 +156,7 @@ class MoscowMule extends HTMLElement {
         }
 
         h2 {
-          font-size: 3.5rem;
+          font-size: calc(2rem + 1vw);
           letter-spacing: -0.1rem;
           text-align: center;
           text-shadow: 0.2rem 0.2rem var(--color-black);
@@ -168,20 +167,11 @@ class MoscowMule extends HTMLElement {
         }
 
         #vodka > h2 {
-          color: var(--color-orange);
+          color: var(--color-white);
         }
 
         #spicey > h2 {
           color: var(--color-green);
-        }
-
-        ul {
-          list-style-type:'✅';
-          text-indent: 2rem;
-          padding: 0.5rem 0 0.5rem 5rem;
-          font-size: 2.5rem;
-          color: var(--color-white);
-          text-shadow: 0.3rem 0.1rem var(--color-black);
         }
 
       </style>
@@ -203,47 +193,29 @@ class MoscowMule extends HTMLElement {
           </section>
 
           <section id='spicey'>
-            <h2>Spicey Ginger — 5 parts</h2>
+            <h2>Spicey Ginger</h2>
           </section>
 
           <section id='vodka'>
-            <h2>Vodka — 2 parts</h2>
+            <h2>Vodka</h2>
           </section>
 
           <div id='glass-bottom'>
           </div>
 
           <section id='spicey'>
-            <h2>Spicey Ginger — 5 parts</h2>
+            <h2>Spicey Ginger</h2>
           </section>
 
         </main>
 
-        <footer>
-          <description>
-            <ul>
-              <li>fill your container with ice-cubes</li>
-              <li>add vodka and spicey ginger</li>
-              <li>top with lime</li>
-            </ul>
-          </description>
-         </footer>
+        <footer></footer>
 
-        </article>
-      `;
+      </article>`;
   }
 }
 
-customElements.define('moscow-mule', MoscowMule);
-
-// const el = document.createElement('vodka-spicey-🫙');
-// document.body.appendChild(el);
-
-// const NewDrink = new VodkaSpicey Vodkager();
-// document.body.appendChild(NewDrink);
-// // document.body.appendChild(NewDrink);
+customElements.define('moscow-mule-🇷🇺', MoscowMule);
 
 
 // const sheet = new CSSStyleSheet();
-
-// document.getElementsByTagName('vodka-spicey-🫙')[0].style.border = '0.5rem solid var(--color-white)';
