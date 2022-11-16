@@ -211,4 +211,4 @@ class GinTonic extends HTMLElement {
   }
 }
 
-customElements.define('gin-tonic-🍋', GinTonic);
+customElements.define('gin-tonic', GinTonic);
