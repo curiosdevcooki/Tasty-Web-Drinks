@@ -174,12 +174,15 @@ class MoscowMule extends HTMLElement {
           color: var(--color-green);
         }
 
+        a {
+          color: var(--color-white);
+        }
       </style>
 
       <article>
 
         <header>
-          <h1>Moscow Mule</h1>
+          <h1><a href='https://www.thomas-henry.com/drinks/moscow-mule/'>Moscow Mule</a></h1>
         </header>
 
         <main>

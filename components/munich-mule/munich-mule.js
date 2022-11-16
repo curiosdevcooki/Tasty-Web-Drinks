@@ -177,12 +177,15 @@ class MunichMule extends HTMLElement {
           color: var(--color-green);
         }
 
+        a {
+          color: var(--color-white);
+        }
       </style>
 
       <article>
 
         <header>
-          <h1>Munich Mule</h1>
+          <h1><a href='https://www.thomas-henry.com/drinks/gin-gin-mule/'>Munich Mule</a></h1>
         </header>
 
         <main>
