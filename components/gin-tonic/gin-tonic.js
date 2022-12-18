@@ -6,7 +6,7 @@ class GinTonic extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' });
 
     shadowRoot.innerHTML = `
-//This is CSS Styling:      
+
     <style>
 
         :host{
@@ -173,7 +173,7 @@ class GinTonic extends HTMLElement {
       </style>
 
 
-// This is my HTML Content:
+
       <article>
 
         <header>
