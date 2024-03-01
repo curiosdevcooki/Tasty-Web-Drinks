@@ -182,12 +182,12 @@ class GinTonic extends HTMLElement {
 
         <main>
           <section id='ice'>
-            <img src='/tasty-web-drinks/images/ice-cube.svg' alt='icecube'/>
+            <img src='images/ice-cube.svg' alt='icecube'/>
           </section>
 
           <section id='lemon'>
-          <img src='/tasty-web-drinks/images/lemon.svg' alt='lemon'/>
-          <img src='/tasty-web-drinks/images/lemon.svg' alt='lemon'/>
+          <img src='images/lemon.svg' alt='lemon'/>
+          <img src='images/lemon.svg' alt='lemon'/>
           </section>
 
           <section id='tonic'>
