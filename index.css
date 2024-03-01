@@ -1,7 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-:root{
+:root {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -10,26 +9,27 @@
   --color-white: #fafafa;
   --color-orange: #f49b75;
 
-  --font-handwritten: 'Caveat', cursive;
+  --font-handwritten: "Caveat", cursive;
 }
 
-body{
+body {
   background-color: var(--color-orange);
-  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/13/24/leaves-146984_960_720.png');
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/13/24/leaves-146984_960_720.png");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: clamp(8rem, 5vw, 15rem);
 }
 
-main{
+main {
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(0, 30rem));
-  gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(0, 30rem));
+  gap: clamp(10rem, 5vw, 20rem);
+
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
-h1{
+h1 {
   font-family: var(--font-handwritten);
   font-size: calc(5rem + 1vw);
   font-weight: bold;
@@ -38,11 +38,11 @@ h1{
   padding: 0;
 }
 
-h2{
+h2 {
   font-family: var(--font-handwritten);
-  font-size: calc(2rem + 1vw);
-  line-height: 2rem;
+  font-size: calc(3rem + 2vw);
+  line-height: 4rem;
   color: var(--color-white);
-  padding-left: 4rem;
   text-align: center;
+  margin-top: clamp(8rem, 5vw, 15rem);
 }
